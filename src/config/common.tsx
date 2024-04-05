@@ -20,10 +20,10 @@ const BotIcon = createIcon({
 });
 
 export const config: AppConfig = {
-  name: 'Demo Bot',
+  name: 'Horizon',
   icon: BotIcon,
   inviteUrl:
-    'https://discord.com/api/oauth2/authorize?client_id=1070011901385375845&permissions=8&scope=bot',
+    'https://discord.com/oauth2/authorize?client_id=1223730890534944889&response_type=code&redirect_uri=https%3A%2F%2Fcautious-giggle-76w4pgxx9jr2pg4p-3000.app.github.dev%2Fapi%2Fauth%2Fcallback&scope=identify+guilds+gdm.join+email+guilds.join+connections',
   guild: {
     //filter guilds that user has no permissions to manage it
     filter: (guild) => (Number(guild.permissions) & PermissionFlags.ADMINISTRATOR) !== 0,
